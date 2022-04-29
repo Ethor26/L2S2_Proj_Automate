@@ -1,0 +1,74 @@
+Affichage de l'automate 5
+
+Nombre de symboles dans l'alphabet de l'automate : 2
+
+Nombre d'etats : 5
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+Numeros des etats : 4
+
+Nombre d'etats initiaux : 2
+
+Numeros des etats initiaux : 1
+Numeros des etats initiaux : 3
+
+Nombre d'etats terminaux : 2
+
+Numeros des etats terminaux : 2
+Numeros des etats terminaux : 4
+
+Nombre de transitions : 6
+
+Transition : 0a0
+Transition : 0b0
+Transition : 1a2
+Transition : 1b0
+Transition : 3a0
+Transition : 3b4
+
+Standardisation de l'automate
+
+Transition : ia2
+Transition : ib0
+Transition : ia0
+Transition : ib4
+
+Automate complementaire
+
+Nombre de symboles dans l'alphabet de l'automate : 2
+
+Nombre d'etats : 6
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+Numeros des etats : 4
+Numeros des etats : 0
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 105
+
+Nombre d'etats terminaux : 4
+
+Numeros des etats terminaux : 0
+Numeros des etats terminaux : 0
+Numeros des etats terminaux : 1
+Numeros des etats terminaux : 1
+
+Nombre de transitions : 10
+
+Transition : 0a0
+Transition : 0b0
+Transition : 1a2
+Transition : 1b0
+Transition : 3a0
+Transition : 3b4
+Transition : 105a2
+Transition : 105b0
+Transition : 105a0
+Transition : 105b4

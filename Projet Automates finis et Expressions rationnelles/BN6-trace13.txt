@@ -1,0 +1,43 @@
+Affichage de l'automate 13
+
+Nombre de symboles dans l'alphabet de l'automate : 1
+
+Nombre d'etats : 8
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+Numeros des etats : 4
+Numeros des etats : 5
+Numeros des etats : 6
+Numeros des etats : 7
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 1
+
+Nombre d'etats terminaux : 6
+
+Numeros des etats terminaux : 0
+Numeros des etats terminaux : 3
+Numeros des etats terminaux : 4
+Numeros des etats terminaux : 5
+Numeros des etats terminaux : 6
+Numeros des etats terminaux : 7
+
+Nombre de transitions : 8
+
+Transition : 0a0
+Transition : 1a2
+Transition : 2a3
+Transition : 3a4
+Transition : 4a5
+Transition : 5a6
+Transition : 6a7
+Transition : 7a0
+
+L'automate est deterministe
+
+L'automate est deterministe
+L'automate n'est pas complet : de chaque etat ne sortent pas toutes les fleches avec toutes les etiquettes possibles

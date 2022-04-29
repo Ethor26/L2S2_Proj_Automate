@@ -1,0 +1,32 @@
+Affichage de l'automate 36
+
+Nombre de symboles dans l'alphabet de l'automate : 2
+
+Nombre d'etats : 3
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+
+Nombre d'etats initiaux : 2
+
+Numeros des etats initiaux : 0
+Numeros des etats initiaux : 2
+
+Nombre d'etats terminaux : 2
+
+Numeros des etats terminaux : 1
+Numeros des etats terminaux : 2
+
+Nombre de transitions : 7
+
+Transition : 0a1
+Transition : 0b1
+Transition : 0b2
+Transition : 1b0
+Transition : 1b2
+Transition : 2a0
+Transition : 2a1
+
+L'automate est synchrone.
+L'automate n'est pas deterministe car il y a plus d'un etat initial

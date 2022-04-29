@@ -1,0 +1,77 @@
+Affichage de l'automate 34
+
+Nombre de symboles dans l'alphabet de l'automate : 2
+
+Nombre d'etats : 7
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+Numeros des etats : 4
+Numeros des etats : 5
+Numeros des etats : 6
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 0
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 6
+
+Nombre de transitions : 11
+
+Transition : 0*1
+Transition : 0*2
+Transition : 0*4
+Transition : 1*2
+Transition : 1a2
+Transition : 2b3
+Transition : 3*2
+Transition : 3*6
+Transition : 4b5
+Transition : 5*4
+Transition : 5*6
+
+L'automate contient au moins une transition epsilon : 0*1
+L'automate est asynchrone.
+
+Epsilon clotures
+
+0' = 0 1 2 4 
+1' = 1 2 
+2' = 2 
+3' = 3 2 6 
+4' = 4 
+5' = 5 4 6 
+6' = 6 
+
+Epsilons clotures utilisees : 2' 3' 5' 0' 
+
+Automate synchrone non deterministe
+
+E  0 1 2 4 
+	a : 2
+		b : 3
+		b : 5
+
+____________________________
+
+
+2 
+		b : 3
+
+____________________________
+
+S  3 2 6 
+		b : 3
+
+____________________________
+
+S  5 4 6 
+		b : 5
+
+____________________________
+
+

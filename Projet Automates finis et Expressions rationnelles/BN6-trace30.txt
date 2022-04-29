@@ -1,0 +1,28 @@
+Affichage de l'automate 30
+
+Nombre de symboles dans l'alphabet de l'automate : 1
+
+Nombre d'etats : 5
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+Numeros des etats : 4
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 1
+
+Nombre d'etats terminaux : 2
+
+Numeros des etats terminaux : 0
+Numeros des etats terminaux : 1
+
+Nombre de transitions : 5
+
+Transition : 0a3
+Transition : 1a2
+Transition : 2a3
+Transition : 3a4
+Transition : 4a0

@@ -1,0 +1,27 @@
+Affichage de l'automate 22
+
+Nombre de symboles dans l'alphabet de l'automate : 4
+
+Nombre d'etats : 4
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 1
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 1
+
+Nombre de transitions : 6
+
+Transition : 0d1
+Transition : 1a0
+Transition : 1a2
+Transition : 1a3
+Transition : 2b3
+Transition : 3c0

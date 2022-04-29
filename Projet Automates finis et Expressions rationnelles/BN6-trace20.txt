@@ -1,0 +1,41 @@
+Affichage de l'automate 20
+
+Nombre de symboles dans l'alphabet de l'automate : 4
+
+Nombre d'etats : 9
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+Numeros des etats : 4
+Numeros des etats : 5
+Numeros des etats : 6
+Numeros des etats : 7
+Numeros des etats : 8
+
+Nombre d'etats initiaux : 5
+
+Numeros des etats initiaux : 0
+Numeros des etats initiaux : 1
+Numeros des etats initiaux : 6
+Numeros des etats initiaux : 7
+Numeros des etats initiaux : 8
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 5
+
+Nombre de transitions : 8
+
+Transition : 0d5
+Transition : 1a2
+Transition : 2b3
+Transition : 3c4
+Transition : 4d5
+Transition : 6a2
+Transition : 7b3
+Transition : 8c4
+
+L'automate est synchrone.
+L'automate n'est pas deterministe car il y a plus d'un etat initial

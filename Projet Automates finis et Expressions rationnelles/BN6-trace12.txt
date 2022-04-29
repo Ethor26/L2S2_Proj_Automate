@@ -1,0 +1,60 @@
+Affichage de l'automate 12
+
+Nombre de symboles dans l'alphabet de l'automate : 4
+
+Nombre d'etats : 2
+
+Numeros des etats : 0
+Numeros des etats : 1
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 1
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 1
+
+Nombre de transitions : 4
+
+Transition : 0b0
+Transition : 0d1
+Transition : 1a1
+Transition : 1c0
+
+L'automate est deterministe
+
+L'automate est deterministe
+L'automate n'est pas complet : de chaque etat ne sortent pas toutes les fleches avec toutes les etiquettes possibles
+
+Automate complementaire
+
+Nombre de symboles dans l'alphabet de l'automate : 4
+
+Nombre d'etats : 2
+
+Numeros des etats : 0
+Numeros des etats : 1
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 1
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 0
+
+Nombre de transitions : 12
+
+Transition : 0b0
+Transition : 0d1
+Transition : 1a1
+Transition : 1c0
+Transition : 0a80
+Transition : 0c80
+Transition : 1b80
+Transition : 1d80
+Transition : 80a80
+Transition : 80b80
+Transition : 80c80
+Transition : 80d80

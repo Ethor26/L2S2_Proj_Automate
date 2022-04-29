@@ -1,0 +1,56 @@
+Affichage de l'automate 8
+
+Nombre de symboles dans l'alphabet de l'automate : 1
+
+Nombre d'etats : 2
+
+Numeros des etats : 0
+Numeros des etats : 1
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 1
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 0
+
+Nombre de transitions : 2
+
+Transition : 0a0
+Transition : 1a0
+L'automate n'est pas complet : de chaque etat ne sortent pas toutes les fleches avec toutes les etiquettes possibles
+
+Completion de l'automate
+
+Transition ajoutee : PaP
+
+Standardisation de l'automate
+
+Transition : ia0
+
+Automate complementaire
+
+Nombre de symboles dans l'alphabet de l'automate : 1
+
+Nombre d'etats : 3
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 0
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 105
+
+Nombre d'etats terminaux : 2
+
+Numeros des etats terminaux : 1
+Numeros des etats terminaux : 2
+
+Nombre de transitions : 4
+
+Transition : 0a0
+Transition : 1a0
+Transition : 80a80
+Transition : 105a0

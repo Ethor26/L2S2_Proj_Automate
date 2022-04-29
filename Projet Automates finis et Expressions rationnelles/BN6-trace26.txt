@@ -1,0 +1,34 @@
+Affichage de l'automate 26
+
+Nombre de symboles dans l'alphabet de l'automate : 2
+
+Nombre d'etats : 4
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 1
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 3
+
+Nombre de transitions : 6
+
+Transition : 1a2
+Transition : 1b2
+Transition : 2a0
+Transition : 2b3
+Transition : 3a3
+Transition : 3b3
+
+L'automate est synchrone.
+L'automate est deterministe
+
+L'automate est synchrone.
+L'automate est deterministe
+L'automate n'est pas complet : de chaque etat ne sortent pas toutes les fleches avec toutes les etiquettes possibles

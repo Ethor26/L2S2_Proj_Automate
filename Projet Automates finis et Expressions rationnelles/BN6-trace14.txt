@@ -1,0 +1,85 @@
+Affichage de l'automate 14
+
+Nombre de symboles dans l'alphabet de l'automate : 4
+
+Nombre d'etats : 4
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 0
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 1
+
+Nombre de transitions : 10
+
+Transition : 0a0
+Transition : 0b2
+Transition : 0c3
+Transition : 0d1
+Transition : 1d1
+Transition : 2b2
+Transition : 2c3
+Transition : 2d1
+Transition : 3c3
+Transition : 3d1
+
+L'automate est deterministe
+
+L'automate est deterministe
+L'automate n'est pas complet : de chaque etat ne sortent pas toutes les fleches avec toutes les etiquettes possibles
+
+Completion de l'automate
+
+Transition ajoutee : 1aP
+Transition ajoutee : 1bP
+Transition ajoutee : 1cP
+Transition ajoutee : 2aP
+Transition ajoutee : 3aP
+Transition ajoutee : 3bP
+
+Automate complementaire
+
+Nombre de symboles dans l'alphabet de l'automate : 4
+
+Nombre d'etats : 4
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 0
+
+Nombre d'etats terminaux : 3
+
+Numeros des etats terminaux : 0
+Numeros des etats terminaux : 1
+Numeros des etats terminaux : 2
+
+Nombre de transitions : 16
+
+Transition : 0a0
+Transition : 0b2
+Transition : 0c3
+Transition : 0d1
+Transition : 1d1
+Transition : 2b2
+Transition : 2c3
+Transition : 2d1
+Transition : 3c3
+Transition : 3d1
+Transition : 1a80
+Transition : 1b80
+Transition : 1c80
+Transition : 2a80
+Transition : 3a80
+Transition : 3b80

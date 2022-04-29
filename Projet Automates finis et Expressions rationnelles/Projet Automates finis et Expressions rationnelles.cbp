@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Projet Automates finis et Expressions rationnelles" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Projet Automates finis et Expressions rationnelles" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Projet Automates finis et Expressions rationnelles" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="automates.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="automates.h" />
+		<Unit filename="determinisation_completion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="determinisation_completion.h" />
+		<Unit filename="langage_complementaire.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="langage_complementaire.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menu.h" />
+		<Unit filename="reconnaissance_de_mots.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="reconnaissance_de_mots.h" />
+		<Unit filename="standardisation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="standardisation.h" />
+		<Unit filename="status.h" />
+		<Unit filename="test_automates.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="test_automates.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

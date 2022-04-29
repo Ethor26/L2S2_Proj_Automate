@@ -1,0 +1,128 @@
+Affichage de l'automate 33
+
+Nombre de symboles dans l'alphabet de l'automate : 3
+
+Nombre d'etats : 13
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 2
+Numeros des etats : 3
+Numeros des etats : 4
+Numeros des etats : 5
+Numeros des etats : 6
+Numeros des etats : 7
+Numeros des etats : 8
+Numeros des etats : 9
+Numeros des etats : 10
+Numeros des etats : 11
+Numeros des etats : 12
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 0
+
+Nombre d'etats terminaux : 1
+
+Numeros des etats terminaux : 12
+
+Nombre de transitions : 30
+
+Transition : 0*1
+Transition : 0*2
+Transition : 0*4
+Transition : 0*5
+Transition : 0*7
+Transition : 0*8
+Transition : 0*9
+Transition : 0*11
+Transition : 0*12
+Transition : 1*2
+Transition : 1*4
+Transition : 1*5
+Transition : 2a3
+Transition : 3*5
+Transition : 4b4
+Transition : 4*5
+Transition : 5c6
+Transition : 6*12
+Transition : 7*8
+Transition : 7*9
+Transition : 7*11
+Transition : 7*12
+Transition : 8a8
+Transition : 8*11
+Transition : 8*12
+Transition : 9b10
+Transition : 10*11
+Transition : 10*12
+Transition : 11c11
+Transition : 11*12
+
+L'automate contient au moins une transition epsilon : 0*1
+L'automate est asynchrone.
+
+Epsilon clotures
+
+0' = 0 1 2 4 5 7 8 9 11 12 
+1' = 1 2 4 5 
+2' = 2 
+3' = 3 5 
+4' = 4 5 
+5' = 5 
+6' = 6 12 
+7' = 7 8 9 11 12 
+8' = 8 11 12 
+9' = 9 
+10' = 10 11 12 
+11' = 11 12 
+12' = 12 
+
+Epsilons clotures utilisees : 3' 4' 6' 8' 10' 11' 0' 
+
+Automate synchrone non deterministe
+
+E/S 1 2 4 5 7 8 9 11 12 
+	a : 3
+		b : 4
+			c : 6
+	a : 8
+		b : 10
+			c : 11
+
+____________________________
+
+
+3 5 
+			c : 6
+
+____________________________
+
+
+4 5 
+		b : 4
+			c : 6
+
+____________________________
+
+S  6 12 
+
+____________________________
+
+S  8 11 12 
+	a : 8
+			c : 11
+
+____________________________
+
+S  10 11 12 
+			c : 11
+
+____________________________
+
+S  11 12 
+			c : 11
+
+____________________________
+
+

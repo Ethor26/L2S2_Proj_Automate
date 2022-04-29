@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.2.3/bin/ninja/win/ninja.exe" -G Ninja "C:\Users\ethan\OneDrive - Efrei\L2-S2\L2S2-MATH\AUTOMATES EXPR RAT\L2S2_Proj_Automate"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/ethan/OneDrive - Efrei/L2-S2/L2S2-MATH/AUTOMATES EXPR RAT/L2S2_Proj_Automate/cmake-build-debug

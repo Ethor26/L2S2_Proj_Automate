@@ -1,0 +1,49 @@
+Affichage de l'automate 4
+
+Nombre de symboles dans l'alphabet de l'automate : 1
+
+Nombre d'etats : 2
+
+Numeros des etats : 0
+Numeros des etats : 1
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 0
+
+Nombre d'etats terminaux : 0
+
+
+Nombre de transitions : 1
+
+Transition : 0a1
+L'automate est complet
+
+Standardisation de l'automate
+
+Transition : ia1
+
+Automate complementaire
+
+Nombre de symboles dans l'alphabet de l'automate : 1
+
+Nombre d'etats : 3
+
+Numeros des etats : 0
+Numeros des etats : 1
+Numeros des etats : 0
+
+Nombre d'etats initiaux : 1
+
+Numeros des etats initiaux : 105
+
+Nombre d'etats terminaux : 3
+
+Numeros des etats terminaux : 0
+Numeros des etats terminaux : 0
+Numeros des etats terminaux : 0
+
+Nombre de transitions : 2
+
+Transition : 0a1
+Transition : 105a1
