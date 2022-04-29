@@ -1,0 +1,111 @@
+Status test_function_automate02(int numero){
+
+    Automate* automate02 = NULL;
+    char mot[BUFSIZ];
+
+    printf("\nVous avez choisi l'automate %d.\n\n", numero);
+
+    automate02 = lire_automate_sur_fichier("BN6-02.txt");
+
+    afficher_automate(automate02, "BN6-trace02.txt", numero);
+
+    printf("\n--------------------------------------------\n\n");
+
+    if (est_un_automate_asynchrone(automate02, "BN6-trace02.txt") == true){
+
+        printf("\n--------------------------------------------\n\n");
+
+        // D�terminisation et compl�tion asynchrone (AFDC)
+
+        elimination_epsilon(automate02, "BN6-trace02.txt", numero);
+
+        printf("\n--------------------------------------------\n");
+    }
+
+    else{
+
+        if (est_un_automate_deterministe(automate02, "BN6-trace02.txt") == true){
+
+            if (est_un_automate_complet(automate02, "BN6-trace02.txt") == true){
+
+                // Afficher de l'AFDC
+            }
+
+            else{
+
+                // Compl�tion AF
+
+                printf("\n--------------------------------------------\n");
+
+                completion(automate02, "BN6-trace02.txt");
+
+                printf("\n--------------------------------------------\n");
+
+            }
+        }
+
+        else{
+
+            // D�terminisation et compl�tion synchrone
+        }
+
+        // Standardisation
+
+        standardisation(automate02, "BN6-trace02.txt");
+
+        printf("\n--------------------------------------------\n");
+
+    }
+
+    // Afficher AFDC
+
+    // Minimisation (AFDCM)
+
+    // Reconnaissance de mots (automate initial)
+
+    printf("\nReconnaissance de mots par l'automate initial\n");
+
+    lire_mot(mot);
+
+    while (mot != "fin"){
+
+        reconnaitre_mot(mot, automate02);
+
+        if  (lire_mot(mot) == 1){
+
+            printf("\n--------------------------------------------\n");
+
+            // Automate compl�mentaire (Acomp)
+
+            printf("\nAutomate complementaire\n\n");
+
+            automate_complementaire(automate02);
+            afficher_automate_complementaire(automate02, "BN6-trace02.txt", numero);
+
+            // Reconnaissance de mots (automate complementaire)
+            printf("\n--------------------------------------------\n");
+
+            printf("\nReconnaissance de mots par l'automate complementaire\n");
+
+            lire_mot(mot);
+
+            while (mot != "fin"){
+
+                reconnaitre_mot(mot, automate02);
+
+                if (lire_mot(mot) == 1){
+
+                    exit(EXIT_FAILURE);
+                }
+
+            }
+
+            printf("\n--------------------------------------------\n");
+
+        }
+
+    }
+
+    return OK;
+
+}
