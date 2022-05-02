@@ -17,7 +17,7 @@ Status test_function_automate01(int numero){
 
         printf("\n--------------------------------------------\n\n");
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         elimination_epsilon(automate01, "BN6-trace01.txt", numero);
 
@@ -35,7 +35,7 @@ Status test_function_automate01(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -48,7 +48,7 @@ Status test_function_automate01(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -77,7 +77,7 @@ Status test_function_automate01(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -131,7 +131,7 @@ Status test_function_automate02(int numero){
 
         elimination_epsilon(automate02, "BN6-trace02.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -147,7 +147,7 @@ Status test_function_automate02(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -160,7 +160,7 @@ Status test_function_automate02(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -189,7 +189,7 @@ Status test_function_automate02(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -243,7 +243,7 @@ Status test_function_automate03(int numero){
 
         elimination_epsilon(automate03, "BN6-trace03.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -259,7 +259,7 @@ Status test_function_automate03(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -272,7 +272,7 @@ Status test_function_automate03(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -301,7 +301,7 @@ Status test_function_automate03(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -355,7 +355,7 @@ Status test_function_automate04(int numero){
 
         elimination_epsilon(automate04, "BN6-trace04.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -371,7 +371,7 @@ Status test_function_automate04(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                  printf("\n--------------------------------------------\n");
 
@@ -384,7 +384,7 @@ Status test_function_automate04(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -413,7 +413,7 @@ Status test_function_automate04(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -466,7 +466,7 @@ Status test_function_automate05(int numero){
 
         elimination_epsilon(automate05, "BN6-trace05.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -482,7 +482,7 @@ Status test_function_automate05(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -495,7 +495,7 @@ Status test_function_automate05(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -524,7 +524,7 @@ Status test_function_automate05(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -578,7 +578,7 @@ Status test_function_automate06(int numero){
 
         elimination_epsilon(automate06, "BN6-trace06.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -594,7 +594,7 @@ Status test_function_automate06(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -608,7 +608,7 @@ Status test_function_automate06(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -637,7 +637,7 @@ Status test_function_automate06(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -691,7 +691,7 @@ Status test_function_automate07(int numero){
 
         elimination_epsilon(automate07, "BN6-trace07.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -707,7 +707,7 @@ Status test_function_automate07(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -721,7 +721,7 @@ Status test_function_automate07(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -750,7 +750,7 @@ Status test_function_automate07(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -804,7 +804,7 @@ Status test_function_automate08(int numero){
 
         elimination_epsilon(automate08, "BN6-trace08.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -820,7 +820,7 @@ Status test_function_automate08(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -833,7 +833,7 @@ Status test_function_automate08(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -862,7 +862,7 @@ Status test_function_automate08(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -916,7 +916,7 @@ Status test_function_automate09(int numero){
 
         elimination_epsilon(automate09, "BN6-trace09.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -932,7 +932,7 @@ Status test_function_automate09(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -945,7 +945,7 @@ Status test_function_automate09(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -974,7 +974,7 @@ Status test_function_automate09(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1028,7 +1028,7 @@ Status test_function_automate10(int numero){
 
         elimination_epsilon(automate10, "BN6-trace10.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1044,7 +1044,7 @@ Status test_function_automate10(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -1057,7 +1057,7 @@ Status test_function_automate10(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1086,7 +1086,7 @@ Status test_function_automate10(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1140,7 +1140,7 @@ Status test_function_automate11(int numero){
 
         elimination_epsilon(automate11, "BN6-trace11.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1156,7 +1156,7 @@ Status test_function_automate11(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -1169,7 +1169,7 @@ Status test_function_automate11(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1198,7 +1198,7 @@ Status test_function_automate11(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1252,7 +1252,7 @@ Status test_function_automate12(int numero){
 
         elimination_epsilon(automate12, "BN6-trace12.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1268,7 +1268,7 @@ Status test_function_automate12(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -1280,7 +1280,7 @@ Status test_function_automate12(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1309,7 +1309,7 @@ Status test_function_automate12(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1363,7 +1363,7 @@ Status test_function_automate13(int numero){
 
         elimination_epsilon(automate13, "BN6-trace13.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1379,7 +1379,7 @@ Status test_function_automate13(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -1392,7 +1392,7 @@ Status test_function_automate13(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1421,7 +1421,7 @@ Status test_function_automate13(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1474,7 +1474,7 @@ Status test_function_automate14(int numero){
 
         elimination_epsilon(automate14, "BN6-trace14.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1490,7 +1490,7 @@ Status test_function_automate14(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -1503,7 +1503,7 @@ Status test_function_automate14(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1532,7 +1532,7 @@ Status test_function_automate14(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1586,7 +1586,7 @@ Status test_function_automate15(int numero){
 
         elimination_epsilon(automate15, "BN6-trace15.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1602,7 +1602,7 @@ Status test_function_automate15(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                   printf("\n--------------------------------------------\n");
 
@@ -1614,7 +1614,7 @@ Status test_function_automate15(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1643,7 +1643,7 @@ Status test_function_automate15(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1697,7 +1697,7 @@ Status test_function_automate16(int numero){
 
         elimination_epsilon(automate16, "BN6-trace16.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1713,7 +1713,7 @@ Status test_function_automate16(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                   printf("\n--------------------------------------------\n");
 
@@ -1726,7 +1726,7 @@ Status test_function_automate16(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1755,7 +1755,7 @@ Status test_function_automate16(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1809,7 +1809,7 @@ Status test_function_automate17(int numero){
 
         elimination_epsilon(automate17, "BN6-trace17.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1825,7 +1825,7 @@ Status test_function_automate17(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                   printf("\n--------------------------------------------\n");
 
@@ -1838,7 +1838,7 @@ Status test_function_automate17(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1867,7 +1867,7 @@ Status test_function_automate17(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -1921,7 +1921,7 @@ Status test_function_automate18(int numero){
 
         elimination_epsilon(automate18, "BN6-trace18.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -1937,7 +1937,7 @@ Status test_function_automate18(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -1950,7 +1950,7 @@ Status test_function_automate18(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -1979,7 +1979,7 @@ Status test_function_automate18(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2033,7 +2033,7 @@ Status test_function_automate19(int numero){
 
         elimination_epsilon(automate19, "BN6-trace19.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2049,7 +2049,7 @@ Status test_function_automate19(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2062,7 +2062,7 @@ Status test_function_automate19(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2091,7 +2091,7 @@ Status test_function_automate19(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2145,7 +2145,7 @@ Status test_function_automate20(int numero){
 
         elimination_epsilon(automate20, "BN6-trace20.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2161,7 +2161,7 @@ Status test_function_automate20(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2174,7 +2174,7 @@ Status test_function_automate20(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2203,7 +2203,7 @@ Status test_function_automate20(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2257,7 +2257,7 @@ Status test_function_automate21(int numero){
 
         elimination_epsilon(automate21, "BN6-trace21.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2273,7 +2273,7 @@ Status test_function_automate21(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2286,7 +2286,7 @@ Status test_function_automate21(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2315,7 +2315,7 @@ Status test_function_automate21(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2369,7 +2369,7 @@ Status test_function_automate22(int numero){
 
         elimination_epsilon(automate22, "BN6-trace22.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2385,7 +2385,7 @@ Status test_function_automate22(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2398,7 +2398,7 @@ Status test_function_automate22(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2427,7 +2427,7 @@ Status test_function_automate22(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2481,7 +2481,7 @@ Status test_function_automate23(int numero){
 
         elimination_epsilon(automate23, "BN6-trace23.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2497,7 +2497,7 @@ Status test_function_automate23(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2510,7 +2510,7 @@ Status test_function_automate23(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2539,7 +2539,7 @@ Status test_function_automate23(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2593,7 +2593,7 @@ Status test_function_automate24(int numero){
 
         elimination_epsilon(automate24, "BN6-trace24.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2609,7 +2609,7 @@ Status test_function_automate24(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2622,7 +2622,7 @@ Status test_function_automate24(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2651,7 +2651,7 @@ Status test_function_automate24(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2705,7 +2705,7 @@ Status test_function_automate25(int numero){
 
         elimination_epsilon(automate25, "BN6-trace25.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2721,7 +2721,7 @@ Status test_function_automate25(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2734,7 +2734,7 @@ Status test_function_automate25(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2763,7 +2763,7 @@ Status test_function_automate25(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2817,7 +2817,7 @@ Status test_function_automate26(int numero){
 
         elimination_epsilon(automate26, "BN6-trace26.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2833,7 +2833,7 @@ Status test_function_automate26(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2846,7 +2846,7 @@ Status test_function_automate26(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2875,7 +2875,7 @@ Status test_function_automate26(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -2929,7 +2929,7 @@ Status test_function_automate27(int numero){
 
         elimination_epsilon(automate27, "BN6-trace27.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -2945,7 +2945,7 @@ Status test_function_automate27(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -2958,7 +2958,7 @@ Status test_function_automate27(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -2987,7 +2987,7 @@ Status test_function_automate27(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3041,7 +3041,7 @@ Status test_function_automate28(int numero){
 
         elimination_epsilon(automate28, "BN6-trace28.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3057,7 +3057,7 @@ Status test_function_automate28(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3070,7 +3070,7 @@ Status test_function_automate28(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3099,7 +3099,7 @@ Status test_function_automate28(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3153,7 +3153,7 @@ Status test_function_automate29(int numero){
 
         elimination_epsilon(automate29, "BN6-trace29.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3170,7 +3170,7 @@ Status test_function_automate29(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3183,7 +3183,7 @@ Status test_function_automate29(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3212,7 +3212,7 @@ Status test_function_automate29(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3266,7 +3266,7 @@ Status test_function_automate30(int numero){
 
         elimination_epsilon(automate30, "BN6-trace30.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3282,7 +3282,7 @@ Status test_function_automate30(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3295,7 +3295,7 @@ Status test_function_automate30(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3324,7 +3324,7 @@ Status test_function_automate30(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3378,7 +3378,7 @@ Status test_function_automate31(int numero){
 
         elimination_epsilon(automate31, "BN6-trace31.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3394,7 +3394,7 @@ Status test_function_automate31(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3407,7 +3407,7 @@ Status test_function_automate31(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3436,7 +3436,7 @@ Status test_function_automate31(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3490,7 +3490,7 @@ Status test_function_automate32(int numero){
 
         elimination_epsilon(automate32, "BN6-trace32.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3506,7 +3506,7 @@ Status test_function_automate32(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3519,7 +3519,7 @@ Status test_function_automate32(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3548,7 +3548,7 @@ Status test_function_automate32(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3602,7 +3602,7 @@ Status test_function_automate33(int numero){
 
         elimination_epsilon(automate33, "BN6-trace33.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3618,7 +3618,7 @@ Status test_function_automate33(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3632,7 +3632,7 @@ Status test_function_automate33(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3661,7 +3661,7 @@ Status test_function_automate33(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3715,7 +3715,7 @@ Status test_function_automate34(int numero){
 
         elimination_epsilon(automate34, "BN6-trace34.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3731,7 +3731,7 @@ Status test_function_automate34(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3745,7 +3745,7 @@ Status test_function_automate34(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3774,7 +3774,7 @@ Status test_function_automate34(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3828,7 +3828,7 @@ Status test_function_automate35(int numero){
 
         elimination_epsilon(automate35, "BN6-trace35.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3844,7 +3844,7 @@ Status test_function_automate35(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3857,7 +3857,7 @@ Status test_function_automate35(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3886,7 +3886,7 @@ Status test_function_automate35(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -3940,7 +3940,7 @@ Status test_function_automate36(int numero){
 
         elimination_epsilon(automate36, "BN6-trace36.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -3956,7 +3956,7 @@ Status test_function_automate36(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -3970,7 +3970,7 @@ Status test_function_automate36(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -3999,7 +3999,7 @@ Status test_function_automate36(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -4053,7 +4053,7 @@ Status test_function_automate37(int numero){
 
         elimination_epsilon(automate37, "BN6-trace37.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -4069,7 +4069,7 @@ Status test_function_automate37(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -4082,7 +4082,7 @@ Status test_function_automate37(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -4111,7 +4111,7 @@ Status test_function_automate37(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -4165,7 +4165,7 @@ Status test_function_automate38(int numero){
 
         elimination_epsilon(automate38, "BN6-trace38.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -4181,7 +4181,7 @@ Status test_function_automate38(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -4194,7 +4194,7 @@ Status test_function_automate38(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -4223,7 +4223,7 @@ Status test_function_automate38(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -4277,7 +4277,7 @@ Status test_function_automate39(int numero){
 
         elimination_epsilon(automate39, "BN6-trace39.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -4293,7 +4293,7 @@ Status test_function_automate39(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -4307,7 +4307,7 @@ Status test_function_automate39(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -4336,7 +4336,7 @@ Status test_function_automate39(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -4390,7 +4390,7 @@ Status test_function_automate40(int numero){
 
         elimination_epsilon(automate40, "BN6-trace40.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -4406,7 +4406,7 @@ Status test_function_automate40(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -4419,7 +4419,7 @@ Status test_function_automate40(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -4448,7 +4448,7 @@ Status test_function_automate40(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -4502,7 +4502,7 @@ Status test_function_automate41(int numero){
 
         elimination_epsilon(automate41, "BN6-trace41.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -4518,7 +4518,7 @@ Status test_function_automate41(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -4532,7 +4532,7 @@ Status test_function_automate41(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -4561,7 +4561,7 @@ Status test_function_automate41(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -4615,7 +4615,7 @@ Status test_function_automate42(int numero){
 
         elimination_epsilon(automate42, "BN6-trace42.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -4631,7 +4631,7 @@ Status test_function_automate42(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -4644,7 +4644,7 @@ Status test_function_automate42(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -4673,7 +4673,7 @@ Status test_function_automate42(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -4727,7 +4727,7 @@ Status test_function_automate43(int numero){
 
         elimination_epsilon(automate43, "BN6-trace43.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -4743,7 +4743,7 @@ Status test_function_automate43(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -4756,7 +4756,7 @@ Status test_function_automate43(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -4785,7 +4785,7 @@ Status test_function_automate43(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 
@@ -4839,7 +4839,7 @@ Status test_function_automate44(int numero){
 
         elimination_epsilon(automate44, "BN6-trace44.txt", numero);
 
-        // Déterminisation et complétion asynchrone (AFDC)
+        // Dï¿½terminisation et complï¿½tion asynchrone (AFDC)
 
         printf("\n--------------------------------------------\n");
     }
@@ -4855,7 +4855,7 @@ Status test_function_automate44(int numero){
 
             else{
 
-                // Complétion AF
+                // Complï¿½tion AF
 
                 printf("\n--------------------------------------------\n");
 
@@ -4870,7 +4870,7 @@ Status test_function_automate44(int numero){
 
         else{
 
-            // Déterminisation et complétion synchrone
+            // Dï¿½terminisation et complï¿½tion synchrone
         }
 
         // Standardisation
@@ -4899,7 +4899,7 @@ Status test_function_automate44(int numero){
 
             printf("\n--------------------------------------------\n");
 
-            // Automate complémentaire (Acomp)
+            // Automate complï¿½mentaire (Acomp)
 
             printf("\nAutomate complementaire\n\n");
 

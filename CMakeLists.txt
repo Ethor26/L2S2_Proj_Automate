@@ -12,4 +12,4 @@ add_executable(L2S2_Proj_Automate main.c
         "Projet Automates finis et Expressions rationnelles/standardisation.c" "Projet Automates finis et Expressions rationnelles/standardisation.h"
         "Projet Automates finis et Expressions rationnelles/status.h"
         "Projet Automates finis et Expressions rationnelles/test_automates.c" "Projet Automates finis et Expressions rationnelles/test_automates.h"
-        "Projet Automates finis et Expressions rationnelles/automates.c" "Projet Automates finis et Expressions rationnelles/automates.h" Tools.c Tools.h)
+        "Projet Automates finis et Expressions rationnelles/automates.c" "Projet Automates finis et Expressions rationnelles/automates.h" Tools.c Tools.h minimisation.c minimisation.h)

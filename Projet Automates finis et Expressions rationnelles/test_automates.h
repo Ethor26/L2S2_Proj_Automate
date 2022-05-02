@@ -5,6 +5,7 @@
 #include "determinisation_completion.h"
 #include "reconnaissance_de_mots.h"
 #include "langage_complementaire.h"
+#include "standardisation.h"
 #include "status.h"
 
 // Declaration des prototypes des fonctions de test
