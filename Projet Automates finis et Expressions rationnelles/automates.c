@@ -1,6 +1,6 @@
 #include "automates.h"
 
-Automate* lire_automate_sur_fichier(const char* nom_du_fichier){
+Automate* lire_automate_sur_fichier(const char* nom_du_fichier){ // const
 
     /* Declaration et initialisation de trois tableaux
     de taille BUFSIZ pour stocker les numeros des
@@ -32,10 +32,10 @@ Automate* lire_automate_sur_fichier(const char* nom_du_fichier){
 
     }
 
-    FILE* fichier = NULL;
+    //FILE* fichier = NULL;
 
     // Ouverture du fichier en mode "r" (lecture seule)
-    fichier = fopen(nom_du_fichier, "r");
+    FILE* fichier = fopen(nom_du_fichier, "r");
 
     if (fichier != NULL){
 
@@ -107,7 +107,7 @@ Automate* lire_automate_sur_fichier(const char* nom_du_fichier){
 
     else{
 
-        printf("Impossible d'ouvrir le fichier %s\n", nom_du_fichier);
+        printf("Impossible d'ouvrir le fichier %s\n Error: %d \n", nom_du_fichier, errno);
         exit(EXIT_FAILURE);
 
     }

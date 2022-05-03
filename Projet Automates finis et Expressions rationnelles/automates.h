@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <errno.h>
 
 typedef struct Automate{
 
@@ -20,7 +21,7 @@ typedef struct Automate{
 
 }Automate;
 
-extern Automate* lire_automate_sur_fichier(const char* nom_du_fichier);
+extern Automate* lire_automate_sur_fichier(const char* nom_du_fichier); //const
 
 extern void afficher_automate(Automate* AF, const char* nom_fichier_trace_execution, int numero);
 

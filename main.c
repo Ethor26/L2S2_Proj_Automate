@@ -5,6 +5,7 @@
 # include <conio.h> // Plus on est de fous, plus on rit (pour couleur mais incomplet).
 #include "Projet Automates finis et Expressions rationnelles/main_Rekia.h"
 #include "Tools.h"
+#include "minimisation.h"
 
 /* Fichier qui active les autres */
 int main(void) {
@@ -23,11 +24,21 @@ int main(void) {
             main_Rekia();
         }
         case 1 : {
-            printf("Debut du test:\n ");
-            fopen("BN6-01", "r");
-            printf("passé");
+            printf("Debut du test: ouverture de fichier\n ");
+            FILE * File_1 = fopen("BN6-01.txt", "r");
+            printf("passe fopen\n");
+            fclose(File_1);
+            Automate * AF = lire_automate_sur_fichier("BN6-40.txt"); //Projet Automates finis et Expressions rationnelles/
+            printf("passe lire\n");
         }
-        default : printf("Au revoir");
+
+        case 2 : {
+            printf("Debut du test: minimisation\n ");
+            //minimisation_automate();
+        }
+
+        default : printf("\nAu revoir");
 
     }
     return 0 ; }
+
