@@ -65,6 +65,59 @@ void LireInt(int * valeur)
 // FONCTIONS OUTILS pour les tableaux
 
 // --------------------------------------------------------------
+// Conversion charactère en chaine simple
+char* char_to_str(char caract){
+    char str[] = {caract, '\0'};
+    return str;
+}
+
+// Pour nbr : char str[] = { AF->numeros_etats_initiaux[i] + '0', '\0'}; // Conversion du int->char et du car->str
+
+#include <unistd.h>        // getcwd
+#include <errno.h>
+
+// #define BUFFER_SIZE 30
+
+// --------------------------------------------------------------
+// Retourne le Path du répertoire courant : équivalent de os.getcwd
+char* Return_Current_Path() {
+    char* buffer = malloc(BUFSIZ * sizeof(char));
+    if ( getcwd( buffer, BUFSIZ) == NULL ) {
+        fprintf( stderr, "Cannot get current working directory path\n" );
+        if ( errno == ERANGE ) {
+            fprintf( stderr, "Buffer size is too small.\n" );
+        }
+        exit( EXIT_FAILURE );
+    }
+
+    delnword(buffer, "\\cmake-build-debug", -1);
+    delnword(buffer, "\\cmake-build-default", -1);
+    // delnword(buffer, "\\Projet Automates finis et Expressions rationnelles", -1);
+
+    printf( "Current working directory: %s\n", buffer );
+    return buffer;
+
+
+    //    return EXIT_SUCCESS;
+}
+
+// --------------------------------------------------------------
+// Supprime une chaine ou un charactère
+void delnword(char *t, char *c, int n)
+{
+    int i = 0, lenc = (int)strlen(c);
+
+    while((t = strstr(t, c)) != NULL)
+    {
+        if(i == n || n == -1)
+            memmove(t, t + lenc, strlen(t) - lenc + 1);
+        else
+            t += lenc; // On saute le mot, c'est pas lui qu'on enlève
+        i++; // delnwords(chaine, " maison", 1);
+    }
+}
+
+// --------------------------------------------------------------
 // FONCTION retournant la longueur d'un tableau de char*
 int len_tab_charEt(size_t size_tab, const char* tab[]){
     // size_t n  = (int) sizeof(tab)/sizeof(tab[0]);

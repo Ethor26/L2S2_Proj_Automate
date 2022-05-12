@@ -9,8 +9,7 @@
 
 #include "Projet Automates finis et Expressions rationnelles/automates.h"
 #include "Tools.h"
-
-void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution, int numero);
+// #include "Vautomates.h"
 
 typedef struct Etat_automate{
     char* num_etat_depart;
@@ -18,6 +17,10 @@ typedef struct Etat_automate{
     char* etats_arrivee[BUFSIZ];
     int nb_etats_arrivee;
 }etat_AF;
+
+void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution, int numero);
+
+
 
 typedef struct Groupe_minimisation{
     char* name_Gr;

@@ -2,7 +2,6 @@
 # include <stdio.h> // Pour fonctions basiques.
 # include<stdlib.h> // Pour pointeurs.
 # include<string.h> // Pour Chaine de caractères.
-# include <conio.h> // Plus on est de fous, plus on rit (pour couleur mais incomplet).
 #include "Projet Automates finis et Expressions rationnelles/main_Rekia.h"
 #include "Tools.h"
 #include "minimisation.h"
@@ -22,19 +21,42 @@ int main(void) {
         case 0 : {
             printf("Debut de l'algo d'archive:\n ");
             main_Rekia();
+            break;
         }
         case 1 : {
             printf("Debut du test: ouverture de fichier\n ");
-            FILE * File_1 = fopen("BN6-01.txt", "r");
+            FILE * File_1 = fopen("Projet Automates finis et Expressions rationnelles\\BN6-01.txt", "r");
+            printf("%s", (const char *) File_1);
+            fscanf(File_1, "Bonjour");
             printf("passe fopen\n");
             fclose(File_1);
-            Automate * AF = lire_automate_sur_fichier("BN6-40.txt"); //Projet Automates finis et Expressions rationnelles/
+            char* Current_Path = Return_Current_Path();
+            strcat(Current_Path, "\\Projet Automates finis et Expressions rationnelles");
+            Automate * AF = lire_automate_sur_fichier(strcat(Current_Path, "\\BN6-40.txt")); //Projet Automates finis et Expressions rationnelles/
+
+            afficher_automate(AF, "BN6-trace40.txt", 40);
             printf("passe lire\n");
+
         }
 
         case 2 : {
+            printf("Debut du test 2: ouverture de fichier\n ");
+            char* Current_Path = Return_Current_Path();
+            //delnword(Current_Path, "\\cmake-build-debug", -1); // Traitement des chemins en trop
+            // printf("%s", Current_Path);
+            FILE * File_2 = fopen(strcat(Current_Path, "\\TestOuv.txt"), "r+");
+            // FILE * File_2 = fopen("TestOuv.txt", "r+");
+            //printf("%p", File_2);
+            fprintf(File_2, "d/d/d");
+            break;
+        }
+
+        case 3:{
             printf("Debut du test: minimisation\n ");
-            //minimisation_automate();
+            char* Current_Path = Return_Current_Path();
+            Automate * AF = lire_automate_sur_fichier("BN6-40.txt");
+            minimisation_automate(AF, strcat(Current_Path, "\\BN6-TraceTest"), 1);
+            break;
         }
 
         default : printf("\nAu revoir");

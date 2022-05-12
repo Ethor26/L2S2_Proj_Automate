@@ -40,6 +40,14 @@ void LireInt(int * valeur);
 // **************************************************************
 // FONCTIONS OUTILS pour les tableaux
 
+char* char_to_str(char caract);
+
+char* Return_Current_Path();
+
+// --------------------------------------------------------------
+// Supprime une chaine ou un charactère
+void delnword(char *t, char *c, int n);
+
 // --------------------------------------------------------------
 // FONCTION retournant la longueur d'un tableau
 int len_tab_charEt(size_t size_tab, const char* tab[]);

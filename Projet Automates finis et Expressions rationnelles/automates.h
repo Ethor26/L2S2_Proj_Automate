@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
+#include "../Tools.h"
+#include <string.h>
 
 typedef struct Automate{
 

@@ -5,6 +5,7 @@
 #include <string.h>
 #include "minimisation.h"
 
+
 // =======================================
 // Fonction outils : initialisation des structures
 
@@ -22,18 +23,26 @@ etat_AF* Return_etat_AF(Automate* AF, int num_etat){
 }
 
 Gr_minim * Return_Gr_minim(char* Etats_Gr[BUFSIZ], int nb_etats_gr){
+    printf("passé1: %s", Etats_Gr[0]);
     Gr_minim* Groupe = malloc(sizeof(Gr_minim));
     Groupe->nb_etats_Gr = nb_etats_gr;
     Groupe->name_Gr = "";
     for(int i=0 ; i<Groupe->nb_etats_Gr ; i++){
         Groupe->etats_Gr[i] = Etats_Gr[i];
+        printf("passé2: %s", Groupe->etats_Gr[i]);
 
         // Vérification si etat existait déjà dans le nom, sinon ajout au nom
         for(int j = 0; j< strlen(Groupe->etats_Gr[i]) ; j++){
+            printf("passé3: %c", Groupe->etats_Gr[i][j]);
             if(find_char_in_tab(Groupe->etats_Gr[i][j], Groupe->name_Gr)){
-                strcat(Groupe->name_Gr, &Groupe->etats_Gr[i][j]);
+                printf("passé4: %c", Groupe->etats_Gr[i][j]);
+                char str[] = { Groupe->etats_Gr[i][j],'\0'}; // Pour la conversion str->char
+                Groupe->name_Gr = strcat(Groupe->name_Gr, str);
+                Groupe->name_Gr = strcat(Groupe->name_Gr, ",");
+                printf("passé5: %s", Groupe->name_Gr);
             }
         }
+        printf("%s", Groupe->name_Gr);
     }
     return Groupe;
 }
@@ -57,7 +66,17 @@ void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution
            "\n ------------------"
            "\n - - - - - Debut Partition 0: Séparation des états entre terminaux et non terminaux\n");
 
-    Gr_minim * Groupe1 = Return_Gr_minim((char**) AF->numeros_etats_initiaux,AF->nb_etats_initiaux);
+    afficher_automate(AF, nom_fichier_trace_execution, numero);
+    char * char_num_etats_initiaux[BUFSIZ];
+    for(int i = 0; i<AF->nb_etats_initiaux; i++){
+        char_num_etats_initiaux[i] = (char*) malloc(sizeof(char));
+        char str[] = { AF->numeros_etats_initiaux[i] + '0', '\0'}; // Conversion du int->char et du car->str
+        char_num_etats_initiaux[i] = str;
+        printf("TabInit: %d : %s\n",i, char_num_etats_initiaux[i]);
+    }
+
+    Gr_minim * Groupe1 = Return_Gr_minim(char_num_etats_initiaux,AF->nb_etats_initiaux);
+    printf("PassGr1");
     Gr_minim * Groupe2 = Return_Gr_minim((char**) AF->numeros_etats_terminaux,AF->nb_etats_terminaux);
     //char* numeros_etats_groupe1[AF->nb_etats_initiaux];
     // char* numeros_etats_groupe2[AF->nb_etats_terminaux];
@@ -80,6 +99,7 @@ void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution
            "\n - - - - - Debut Partition 1: Séparation des états en fonctions de leur types de transitions (T ou NT)\n");
 
     int i = 0;
+    // Etablissement des motifs pour le groupe 1
     foreach(char **num_etat_gr1, Groupe1->etats_Gr){
         printf("Etat gr1 : %d", **num_etat_gr1);
         etat_AF_minim* E_AF_min = Return_etat_AF_minim(AF, **num_etat_gr1); // Creation d'un état fait pour la minimisation
@@ -90,6 +110,7 @@ void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution
             E_AF_min->list_gr_minim[i] = Groupe2;
         }
     }
+
 }
 
 
