@@ -26,19 +26,21 @@ Gr_minim * Return_Gr_minim(char* Etats_Gr[BUFSIZ], int nb_etats_gr){
     printf("passé1: %s", Etats_Gr[0]);
     Gr_minim* Groupe = malloc(sizeof(Gr_minim));
     Groupe->nb_etats_Gr = nb_etats_gr;
+    Groupe->name_Gr = malloc(BUFSIZ * sizeof(char));
     Groupe->name_Gr = "";
     for(int i=0 ; i<Groupe->nb_etats_Gr ; i++){
+        Groupe->etats_Gr[i] = malloc(BUFSIZ * sizeof(char));
         Groupe->etats_Gr[i] = Etats_Gr[i];
         printf("passé2: %s", Groupe->etats_Gr[i]);
 
         // Vérification si etat existait déjà dans le nom, sinon ajout au nom
         for(int j = 0; j< strlen(Groupe->etats_Gr[i]) ; j++){
             printf("passé3: %c", Groupe->etats_Gr[i][j]);
-            if(find_char_in_tab(Groupe->etats_Gr[i][j], Groupe->name_Gr)){
+            if(find_char_in_tab(Groupe->etats_Gr[i][j], Groupe->name_Gr) == -1){
                 printf("passé4: %c", Groupe->etats_Gr[i][j]);
                 char str[] = { Groupe->etats_Gr[i][j],'\0'}; // Pour la conversion str->char
-                Groupe->name_Gr = strcat(Groupe->name_Gr, str);
-                Groupe->name_Gr = strcat(Groupe->name_Gr, ",");
+                strcat(Groupe->name_Gr, str);
+                strcat(Groupe->name_Gr, ",");
                 printf("passé5: %s", Groupe->name_Gr);
             }
         }
