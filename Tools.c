@@ -94,7 +94,7 @@ char* Return_Current_Path() {
     delnword(buffer, "\\cmake-build-default", -1);
     // delnword(buffer, "\\Projet Automates finis et Expressions rationnelles", -1);
 
-    printf( "Current working directory: %s\n", buffer );
+    printf("Current working directory: %s\n", buffer );
     return buffer;
 
 

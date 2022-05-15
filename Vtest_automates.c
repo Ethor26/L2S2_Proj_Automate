@@ -1,34 +1,34 @@
-#include "test_automates.h"
+#include "Vtest_automates.h"
 
-Status test_function_automate01(int numero){
+Status test_function_automate(int numero, char * fichier, char * fichiertrace){
 
-    Automate* automate01 = NULL;
+    Automate* automateTest = NULL;
     char mot[BUFSIZ];
 
     printf("\nVous avez choisi l'automate %d.\n\n", numero);
 
-    automate01 = lire_automate_sur_fichier("BN6-01.txt");
+    automateTest = lire_automate_sur_fichier(fichier);
 
-    afficher_automate(automate01, "BN6-trace01.txt", numero);
+    afficher_automate(automateTest,fichiertrace, numero);
 
     printf("\n--------------------------------------------\n\n");
 
-    if (est_un_automate_asynchrone(automate01, "BN6-trace01.txt") == true){
+    if (est_un_automate_asynchrone(automateTest, fichiertrace) == true){
 
         printf("\n--------------------------------------------\n\n");
 
         // D�terminisation et compl�tion asynchrone (AFDC)
 
-        elimination_epsilon(automate01, "BN6-trace01.txt", numero);
+        elimination_epsilon(automateTest, fichiertrace, numero);
 
         printf("\n--------------------------------------------\n");
     }
 
     else{
 
-        if (est_un_automate_deterministe(automate01, "BN6-trace01.txt") == true){
+        if (est_un_automate_deterministe(automateTest, fichiertrace) == true){
 
-            if (est_un_automate_complet(automate01, "BN6-trace01.txt") == true){
+            if (est_un_automate_complet(automateTest, fichiertrace) == true){
 
                 // Afficher de l'AFDC
             }
@@ -39,7 +39,7 @@ Status test_function_automate01(int numero){
 
                 printf("\n--------------------------------------------\n");
 
-                completion(automate01, "BN6-trace01.txt");
+                completion(automateTest, fichiertrace);
 
                 printf("\n--------------------------------------------\n");
 
@@ -53,7 +53,7 @@ Status test_function_automate01(int numero){
 
         // Standardisation
 
-        standardisation(automate01, "BN6-trace01.txt");
+        standardisation(automateTest, fichiertrace);
 
         printf("\n--------------------------------------------\n");
 
@@ -71,7 +71,7 @@ Status test_function_automate01(int numero){
 
     while (mot != "fin"){
 
-        reconnaitre_mot(mot, automate01);
+        reconnaitre_mot(mot, automateTest);
 
         if  (lire_mot(mot) == 1){
 
@@ -81,8 +81,8 @@ Status test_function_automate01(int numero){
 
             printf("\nAutomate complementaire\n\n");
 
-            automate_complementaire(automate01);
-            afficher_automate_complementaire(automate01, "BN6-trace01.txt", numero);
+            automate_complementaire(automateTest);
+            afficher_automate_complementaire(automateTest, fichiertrace, numero);
 
             // Reconnaissance de mots (automate complementaire)
             printf("\n--------------------------------------------\n");
@@ -93,7 +93,7 @@ Status test_function_automate01(int numero){
 
             while (mot != "fin"){
 
-                reconnaitre_mot(mot, automate01);
+                reconnaitre_mot(mot, automateTest);
 
                 if (lire_mot(mot) == 1){
 
@@ -111,7 +111,7 @@ Status test_function_automate01(int numero){
     return OK;
 
 }
-
+/*
 Status test_function_automate02(int numero){
 
     Automate* automate02 = NULL;
@@ -1606,7 +1606,7 @@ Status test_function_automate15(int numero){
 
                   printf("\n--------------------------------------------\n");
 
-                completion(automate15, "BN6-trace15.txt");
+                  completion(automate15, "BN6-trace15.txt");
 
                   printf("\n--------------------------------------------\n");
             }
@@ -1717,7 +1717,7 @@ Status test_function_automate16(int numero){
 
                   printf("\n--------------------------------------------\n");
 
-                completion(automate16, "BN6-trace16.txt");
+                  completion(automate16, "BN6-trace16.txt");
 
                   printf("\n--------------------------------------------\n");
 
@@ -1829,7 +1829,7 @@ Status test_function_automate17(int numero){
 
                   printf("\n--------------------------------------------\n");
 
-                completion(automate17, "BN6-trace17.txt");
+                  completion(automate17, "BN6-trace17.txt");
 
                   printf("\n--------------------------------------------\n");
 
@@ -4934,6 +4934,7 @@ Status test_function_automate44(int numero){
 
 }
 
+*/
 
 
 

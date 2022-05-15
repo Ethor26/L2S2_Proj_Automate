@@ -11,18 +11,192 @@ void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution
 
 typedef struct Groupe_minimisation{
     char* name_Gr;
-    char* etats_Gr[BUFSIZ];
+    etat_AF_minim* etats_Gr[BUFSIZ]; // Les groupes contienne leurs etats et non l'inverse (les etats ne contienne que les noms)
     int nb_etats_Gr;
 }Gr_minim;
 
 typedef struct Etat_automate_minimisation{
     etat_AF* Etat_AF;
-    Gr_minim* list_gr_minim[BUFSIZ];
+    char* list_gr_minim[BUFSIZ];
 }etat_AF_minim;
 
+// INIT STRUCTURES
 
-Liste_Gr = []
+Init_Gr(int num_part, int id_gr):
+    Gr_minim* Groupe = malloc(sizeof(Gr_minim));
+    Groupe->name = "P" + (str) num_part + "." + id_gr;
+    Groupe->Etats_gr = malloc(BUFSIZ* sizeof(etat_AF_minim*));
+    return Groupe
 
-Minim_princ(Automate AF, Fichier_trace):
-    liste_Etat_AF = [Initialiser avec la listes des etats de l'automate]
-    Liste_Gr =
+// OUTILS MINIM
+
+void Aff_Pres_part(int num_part){
+    fprintf(fichier, "- - - - - Fin Partition %d:\n ------------------\n - - - - - Debut Partition %d: Séparation des états en fonctions de leur types de transitions (T ou NT)\n", num_part, num_part +1);
+    printf("- - - - - Fin Partition %d:"
+           "\n ------------------"
+           "\n - - - - - Debut Partition %d: Séparation des états en fonctions de leur types de transitions\n", num_part, num_part +1);
+}
+
+void Aff_Pres_part(Gr_minim* List_Gr[]){
+    // On parcours tous les groupes
+    for (int id_Gr = 0; id_Gr<len(List_Gr) ; id_Gr++):
+        Gr minim* Groupe = List_Gr[Nbetat_Gr];
+        printf("Groupe %s a pour etats :", Groupe->name_gr);
+        fprintf("Groupe %s a pour etats :", Groupe->name_gr);
+
+        // On parcours tous les etats de chaque groupe
+        for(int Nbetat_Gr = 0; Nbetat_Gr<len(Groupe) ; Nbetat_Gr++):
+            etat_AF_minim* Etat_etudie = Groupe[Nbetat_Gr];
+            printf("%s", Etat_etudie->num_etat_depart);
+            fprintf("%s", Etat_etudie->num_etat_depart);
+
+        fprintf("\n");
+        printf("\n");
+    }
+}
+
+gr_minim* find_Gr(etat_AF_minim* etat_rech, gr_minim* List_Gr[])
+    // On parcours tous les groupes
+    for (int id_Gr = 0; id_Gr<len(List_Gr) ; id_Gr++):
+        Gr minim* Groupe = List_Gr[Nbetat_Gr];
+
+        // On parcours tous les etats de chaque groupe
+        for(int Nbetat_Gr = 0; Nbetat_Gr<len(Groupe) ; Nbetat_Gr++):
+            etat_AF_minim* Etat_etudie = Groupe[Nbetat_Gr];
+
+            // Si l'etat cherché correspond à celui d'un groupe, on renvoie ce groupe
+            if(etat_rech->Etat_AF->num_etat_depart == Etat_etudie->Etat_AF->num_etat_depart)
+                return Groupe;
+    return NULL;
+
+// Fonction retourne le (nouveau) groupe auquel appartient l'etat ou null en fonction des motifs de transitions
+gr_minim* verifMotif(Etat_etudie, Groupe, List_groupes)
+    for(etat_et = 0; etat_et< len(Groupe->etats_gr); etat_et++):
+        // Boucle pour comparer chaque état par rapport aux autres
+        for(int etat_cmp = 0; etat_cmp<len(Groupe->etats_gr); etat_cmp++):
+
+            if (etat_cmp != etat_et){ // Pour que l'etat ne soit pas comparé avec lui-même
+                MemeGr = True;
+                // Comparaison des motifs
+                for(int j = 0; j< strlen(etat_et->list_gr_minim) ; j++):
+                    if(Groupe[etat_et]->gr_minim[j] != Groupe[etat_comp]->gr_minim[j]) // Fonction de comparaison de str
+                        MemeGr = False;
+                if MemeGr == True
+                    return find_Gr(Groupe[etat_comp], List_groupes)
+             }
+
+    return NULL;
+
+etats_AF_minim** Elimination des doublons(List_Gr, liste_Etat_AF, AF){
+    // On parcours tous les groupes
+    List_Et_AFMIN = []
+    for (int id_Gr = 0; id_Gr<len(List_Gr) ; id_Gr++):
+        Gr minim* Groupe = List_Gr[Nbetat_Gr];
+
+        if(len(Groupe) > 1) // A ce niveau, tous groupes sont des singletons sauf ceux avec des doublons.
+            liste_etats_af = Minim_to_af(Groupe->etats_Gr);
+            liste_etats_AFMin = fusion_etats(liste_etats_af); // Fonction commune avec la détermisation
+
+            for etat in liste_etats_AFMin: // Attribution des etats minimaux à la liste finale : par pointeurs et foreach
+                *List_Et_AFMIN = etat;
+                List_Et_AFMIN++;
+    return List_Et_AFMIN;
+}
+
+// PRINCIPALES
+
+void Minim_princ(Automate AF, Fichier_trace):
+
+    // On suppose l'automate déterministe complet
+    // FILE * fichier = fopen(nom_fichier_trace_execution, "w"); // Réactiver après test
+
+    //fprintf(fichier, "************** Debut de la minimisation ***************\n ------------------\n - - - - - Debut Partition 0: Séparation des états entre terminaux et non terminaux\n");
+    printf("************** Debut de la minimisation ***************"
+           "\n ------------------"
+           "\n - - - - - Debut Partition 0: Séparation des états entre terminaux et non terminaux\n");
+
+    int num_part = 0
+    Gr1 = Init_Gr(int num_part, 1)
+    Gr2 = Init_Gr(int num_part, 2)
+
+    for (int j = 0; j < AF->nb_etats_initiaux; j++){
+            printf("Groupe 1 : Numeros des etats initiaux : %d\n", AF->numeros_etats_initiaux[j]);
+            //fprintf(fichier, "Groupe 1 :Numeros des etats initiaux : %d\n", AF->numeros_etats_initiaux[j]);
+            //numeros_etats_groupe1[j] = (char*)AF->numeros_etats_initiaux[j];
+        }
+
+        for (int k = 0; k < AF->nb_etats_terminaux; k++){
+            printf("Groupe 2 : Numeros des etats terminaux : %d\n", AF->numeros_etats_terminaux[k]);
+            //fprintf(fichier, "Groupe 2 : Numeros des etats terminaux : %d\n", AF->numeros_etats_terminaux[k]);
+            // numeros_etats_groupe2[k] = (char*)AF->numeros_etats_terminaux[k];
+        }
+
+    Liste_Gr = [Gr1, Gr2]
+
+    Aff_Pres_part(int num_part)
+
+    do{
+        num_part++;
+        List_Gr, Creation_gr = Partition(List_Gr, num_part) // le liste_gr à gauche est l'"ancien". AF au cas ou
+        Aff_res_part(List_Gr);
+        Aff_Pres_part(num_part);
+    } while Creation_gr == True // Partition exécutée tant que groupe crée
+
+    List_etat_AFminim = Elimination des doublons(List_Gr, liste_Etat_AF, AF)
+    Etat_AF_in_AF(AF, List_etat_AFminim) // Attribution des etats_af de l'automate minimisé dans AF
+
+
+Liste Partition(List_Gr, num_part){
+
+    // 1ere etape : parcours des automates de chaque groupe et association d'un groupe à leurs états d'arrivée.
+    // Attention : pas de création de groupe à ce moment
+
+    // On parcours tous les groupes
+    for (int id_Gr = 0; id_Gr<len(List_Gr) ; id_Gr++):
+        Gr minim* Groupe = List_Gr[Nbetat_Gr]
+
+        // On parcours tous les etats de chaque groupe
+        for(int Nbetat_Gr = 0; Nbetat_Gr<len(Groupe) ; Nbetat_Gr++):
+            etat_AF_minim* Etat_etudie = Groupe[Nbetat_Gr]
+
+            // On parcours tous les etats d'arrivée de chaque état du groupe
+            for (int nb_Etat_ar=0; nb_Etat_ar < len(Etat_etudie->etat_arrive); nb_Etat_ar++):
+
+                // On obtient le numéro du groupe de l'etat d'arrivée. Si le numéro existe, le tableau des groupes de
+                // l'etat prend le groupe. Sinon, on crée un nouveau groupe, que prend l'etat.
+                Gr minim* gr_etat_arr = find_Gr(Etat_gr->etat_arrive, List_Gr)
+                if (gr_etat_arr == null)
+                    printf("Erreur : pas de groupe attribué")
+                else
+                    Etat_gr->Gr_minim[i] = gr_etat_arr->name
+
+    // 2e etape : répartition dans un groupe des états de départ en fonction des groupes des etats d'arrivées
+    List_new_gr = [] // stocke la liste des nouveaux groupes
+    Creation_gr = False // Pour vérifier si creation de groupe ou non
+
+    // On parcours tous les groupes
+    for (int id_Gr = 0; id_Gr<len(List_Gr) ; id_Gr++):
+            Gr minim* Groupe = List_Gr[Nbetat_Gr]
+
+            // On parcours tous les etats de chaque groupe
+            for(int Nbetat_Gr = 0; Nbetat_Gr<len(Groupe) ; Nbetat_Gr++):
+                etat_AF_minim* Etat_etudie = Groupe[Nbetat_Gr]
+                // On connait le groupe initial de l'etat de départ, mais on l'attribue maintenant à un nouveau groupe.
+
+                // Comparaison des motifs de l'etat étudiée avec ceux des etats de son groupe (motifs = tableau Gr_minim*):
+                // Fonction retourne le (nouveau) groupe auquel appartient l'etat ou null en fonction des motifs de transitions
+                gr_minim* new_Gr_corr = Verif_motifs(Etat_etudie, Groupe, List_new_gr)
+
+                // Si l'état n'est pas dans un des nouveau groupes, on en crée 1.
+                if new_Gr_corr == null && len(Groupe) > 1
+                    Gr_minim* nouv_Gr = Init_Gr(int num_part, len(List_Gr))
+                    nouv_Gr->etats_Gr.append(Etat_etudie[nb_Etat_ar])
+                    List_new_gr.append(nouv_Gr)
+                    Creation_gr = True
+                else if new_Gr_corr == null
+                    new_Gr_corr->etats_gr.append(Etat_etudie)
+
+    return List_new_gr, Creation_gr
+
+}
+

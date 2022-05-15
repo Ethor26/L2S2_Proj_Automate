@@ -26,8 +26,7 @@ Gr_minim * Return_Gr_minim(char* Etats_Gr[BUFSIZ], int nb_etats_gr){
     printf("passé1: %s", Etats_Gr[0]);
     Gr_minim* Groupe = malloc(sizeof(Gr_minim));
     Groupe->nb_etats_Gr = nb_etats_gr;
-    Groupe->name_Gr = malloc(BUFSIZ * sizeof(char));
-    Groupe->name_Gr = "";
+    Groupe->name_Gr = malloc(20 * sizeof(char));
     for(int i=0 ; i<Groupe->nb_etats_Gr ; i++){
         Groupe->etats_Gr[i] = malloc(BUFSIZ * sizeof(char));
         Groupe->etats_Gr[i] = Etats_Gr[i];

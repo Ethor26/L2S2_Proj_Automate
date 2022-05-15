@@ -35,8 +35,8 @@ Automate* lire_automate_sur_fichier(const char* nom_du_fichier){ // const
 
     // TEMPORAIRE
     //char* Current_Path = Return_Current_Path();
-    //strcat(Current_Path, "\\Projet Automates finis et Expressions rationnelles\\");
-    //nom_du_fichier = strcat(Current_Path, nom_du_fichier);
+    // strcat(Current_Path, "\\Projet Automates finis et Expressions rationnelles\\");
+    // nom_du_fichier = strcat(Current_Path, nom_du_fichier);
     // Ouverture du fichier en mode "r" (lecture seule)
     FILE* fichier = fopen(nom_du_fichier, "r");
 

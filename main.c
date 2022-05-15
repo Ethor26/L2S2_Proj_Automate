@@ -5,6 +5,7 @@
 #include "Projet Automates finis et Expressions rationnelles/main_Rekia.h"
 #include "Tools.h"
 #include "minimisation.h"
+#include "Vmenu.h"
 
 /* Fichier qui active les autres */
 int main(void) {
@@ -24,19 +25,9 @@ int main(void) {
             break;
         }
         case 1 : {
-            printf("Debut du test: ouverture de fichier\n ");
-            FILE * File_1 = fopen("Projet Automates finis et Expressions rationnelles\\BN6-01.txt", "r");
-            printf("%s", (const char *) File_1);
-            fscanf(File_1, "Bonjour");
-            printf("passe fopen\n");
-            fclose(File_1);
-            char* Current_Path = Return_Current_Path();
-            strcat(Current_Path, "\\Projet Automates finis et Expressions rationnelles");
-            Automate * AF = lire_automate_sur_fichier(strcat(Current_Path, "\\BN6-40.txt")); //Projet Automates finis et Expressions rationnelles/
-
-            afficher_automate(AF, "BN6-trace40.txt", 40);
-            printf("passe lire\n");
-
+            printf("Debut de l'algo principal\n ");
+            menu_auto();
+            break;
         }
 
         case 2 : {
@@ -51,7 +42,23 @@ int main(void) {
             break;
         }
 
-        case 3:{
+        case 3 : {
+            printf("Debut du test: ouverture de fichier\n ");
+            FILE * File_1 = fopen("Projet Automates finis et Expressions rationnelles\\BN6-01.txt", "r");
+            printf("%s", (const char *) File_1);
+            fscanf(File_1, "Bonjour");
+            printf("passe fopen\n");
+            fclose(File_1);
+            char* Current_Path = Return_Current_Path();
+            strcat(Current_Path, "\\Projet Automates finis et Expressions rationnelles");
+            Automate * AF = lire_automate_sur_fichier(strcat(Current_Path, "\\BN6-40.txt")); //Projet Automates finis et Expressions rationnelles/
+
+            afficher_automate(AF, "BN6-trace40.txt", 40);
+            printf("passe lire\n");
+            break;
+        }
+
+        case 4:{
             printf("Debut du test: minimisation\n ");
             char* Current_Path = Return_Current_Path();
             Automate * AF = lire_automate_sur_fichier("BN6-40.txt");
