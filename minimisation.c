@@ -58,6 +58,10 @@ etat_AF_minim* Return_etat_AF_minim(Automate* AF, int num_etat){
 // =======================================
 // ALGO PRINCIPAL
 
+
+
+
+
 void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution, int numero){
     // On suppose l'automate déterministe complet
     // FILE * fichier = fopen(nom_fichier_trace_execution, "w"); // Réactiver après test

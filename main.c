@@ -6,6 +6,7 @@
 #include "Tools.h"
 #include "minimisation.h"
 #include "Vmenu.h"
+#include "minimisation_V2.h"
 
 /* Fichier qui active les autres */
 int main(void) {
@@ -61,8 +62,10 @@ int main(void) {
         case 4:{
             printf("Debut du test: minimisation\n ");
             char* Current_Path = Return_Current_Path();
-            Automate * AF = lire_automate_sur_fichier("BN6-40.txt");
-            minimisation_automate(AF, strcat(Current_Path, "\\BN6-TraceTest"), 1);
+            char* Path_Lecture = Return_Current_Path();
+            strcat(Path_Lecture, "\\Projet Automates finis et Expressions rationnelles");
+            Automate * AF = lire_automate_sur_fichier(strcat(Path_Lecture, "\\BN6-40.txt"));
+            Minim_princ(AF, strcat(Current_Path, "\\BN6-TraceTest"), 40);
             break;
         }
 

@@ -71,6 +71,14 @@ char* char_to_str(char caract){
     return str;
 }
 
+// --------------------------------------------------------------
+// Conversion charactère en chaine simple
+char* int_to_str(int entier){
+    char* convert_int_to_str = malloc(BUFSIZ*sizeof(char));
+    itoa(entier, convert_int_to_str, 10);
+    return  convert_int_to_str;
+}
+
 // Pour nbr : char str[] = { AF->numeros_etats_initiaux[i] + '0', '\0'}; // Conversion du int->char et du car->str
 
 #include <unistd.h>        // getcwd

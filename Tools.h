@@ -8,6 +8,14 @@
 #define L2S2_PROJ_AUTOMATE_TOOLS_H
 
 // **************************************************************
+// STRUCTURE OUTILS pour fonctionnalités supplémentaire.
+
+typedef struct Liste_dynamique{
+    int list_int;
+    char* list_charEt;
+}list_dynam;
+
+// **************************************************************
 // FONCTIONS OUTILS pour fonctionnalités supplémentaire.
 
 // --------------------------------------------------------------
@@ -41,6 +49,10 @@ void LireInt(int * valeur);
 // FONCTIONS OUTILS pour les tableaux
 
 char* char_to_str(char caract);
+
+// --------------------------------------------------------------
+// Conversion charactère en chaine simple
+char* int_to_str(int entier);
 
 char* Return_Current_Path();
 

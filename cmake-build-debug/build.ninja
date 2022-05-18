@@ -133,6 +133,12 @@ build CMakeFiles/L2S2_Proj_Automate.dir/Vtest_automates.c.obj: C_COMPILER__L2S2_
   OBJECT_DIR = CMakeFiles\L2S2_Proj_Automate.dir
   OBJECT_FILE_DIR = CMakeFiles\L2S2_Proj_Automate.dir
 
+build CMakeFiles/L2S2_Proj_Automate.dir/minimisation_V2.c.obj: C_COMPILER__L2S2_Proj_Automate_Debug C$:/Users/ethan/OneDrive$ -$ Efrei/L2-S2/L2S2-MATH/AUTOMATES$ EXPR$ RAT/L2S2_Proj_Automate/minimisation_V2.c || cmake_object_order_depends_target_L2S2_Proj_Automate
+  DEP_FILE = CMakeFiles\L2S2_Proj_Automate.dir\minimisation_V2.c.obj.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles\L2S2_Proj_Automate.dir
+  OBJECT_FILE_DIR = CMakeFiles\L2S2_Proj_Automate.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target L2S2_Proj_Automate
@@ -141,7 +147,7 @@ build CMakeFiles/L2S2_Proj_Automate.dir/Vtest_automates.c.obj: C_COMPILER__L2S2_
 #############################################
 # Link the executable L2S2_Proj_Automate.exe
 
-build L2S2_Proj_Automate.exe: C_EXECUTABLE_LINKER__L2S2_Proj_Automate_Debug CMakeFiles/L2S2_Proj_Automate.dir/main.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/main_Rekia.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/menu.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/langage_complementaire.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/determinisation_completion.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/reconnaissance_de_mots.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/standardisation.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/test_automates.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/automates.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Tools.c.obj CMakeFiles/L2S2_Proj_Automate.dir/minimisation.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Vmenu.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Vdeterminisation_completion.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Vtest_automates.c.obj
+build L2S2_Proj_Automate.exe: C_EXECUTABLE_LINKER__L2S2_Proj_Automate_Debug CMakeFiles/L2S2_Proj_Automate.dir/main.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/main_Rekia.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/menu.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/langage_complementaire.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/determinisation_completion.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/reconnaissance_de_mots.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/standardisation.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/test_automates.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Projet_Automates_finis_et_Expressions_rationnelles/automates.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Tools.c.obj CMakeFiles/L2S2_Proj_Automate.dir/minimisation.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Vmenu.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Vdeterminisation_completion.c.obj CMakeFiles/L2S2_Proj_Automate.dir/Vtest_automates.c.obj CMakeFiles/L2S2_Proj_Automate.dir/minimisation_V2.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\L2S2_Proj_Automate.dir

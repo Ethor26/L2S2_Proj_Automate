@@ -5,7 +5,6 @@
 #ifndef L2S2_PROJ_AUTOMATE_MINIMISATION_H
 #define L2S2_PROJ_AUTOMATE_MINIMISATION_H
 
-#endif //L2S2_PROJ_AUTOMATE_MINIMISATION_H
 
 #include "Projet Automates finis et Expressions rationnelles/automates.h"
 #include "Tools.h"
@@ -18,10 +17,6 @@ typedef struct Etat_automate{
     int nb_etats_arrivee;
 }etat_AF;
 
-void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution, int numero);
-
-
-
 typedef struct Groupe_minimisation{
     char* name_Gr;
     char* etats_Gr[BUFSIZ];
@@ -32,4 +27,11 @@ typedef struct Etat_automate_minimisation{
     etat_AF* Etat_AF;
     Gr_minim* list_gr_minim[BUFSIZ];
 }etat_AF_minim;
+
+void minimisation_automate(Automate* AF, const char* nom_fichier_trace_execution, int numero);
+
+#endif //L2S2_PROJ_AUTOMATE_MINIMISATION_H
+
+
+
 

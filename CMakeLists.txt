@@ -14,4 +14,4 @@ add_executable(L2S2_Proj_Automate main.c
         "Projet Automates finis et Expressions rationnelles/test_automates.c" "Projet Automates finis et Expressions rationnelles/test_automates.h"
         "Projet Automates finis et Expressions rationnelles/automates.c" "Projet Automates finis et Expressions rationnelles/automates.h"
         Tools.c Tools.h minimisation.c minimisation.h
-        Vmenu.h Vmenu.c Vdeterminisation_completion.c Vdeterminisation_completion.h Vtest_automates.c Vtest_automates.h)
+        Vmenu.h Vmenu.c Vdeterminisation_completion.c Vdeterminisation_completion.h Vtest_automates.c Vtest_automates.h minimisation_V2.c minimisation_V2.h)
