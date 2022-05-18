@@ -40,6 +40,7 @@ void menu_auto(){
 // Pour créer un nom de fichier absolu et adaptatif
 char* creation_file_BN(int numero, char* type, char * format){
     char* Current_Path = Return_Current_Path();
+    strcat(Current_Path, "\\Projet Automates finis et Expressions rationnelles");
     char numero_str[20];
     itoa(numero, numero_str, 10); // sprintf(text, "%d", number); // Pour conversion de string en int
     char * nom_file_general = strcat(Current_Path, "\\BN6"); // strcat("\\BN6", type)

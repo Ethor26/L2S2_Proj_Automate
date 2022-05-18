@@ -54,6 +54,10 @@ char* char_to_str(char caract);
 // Conversion charactère en chaine simple
 char* int_to_str(int entier);
 
+// --------------------------------------------------------------
+// Comparaison Str : pas que la longueur
+int Str_comp(char* str1, char * str2);
+
 char* Return_Current_Path();
 
 // --------------------------------------------------------------

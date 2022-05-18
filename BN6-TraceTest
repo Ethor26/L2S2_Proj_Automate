@@ -1,28 +1,19 @@
-Affichage de l'automate 40
+Groupe ��P0.1 :Numeros des etats terminaux : 0 3 4
+Groupe P0.2 : Numeros des etats non terminaux : 1 2
+- - - - - Fin Partition 0:
+ ------------------
+ - - - - - Debut Partition 1: Séparation des états en fonctions de leur types de transitions (T ou NT)
+Groupe P1.0 a pour etats :0 3 4 
+Groupe P1.1 a pour etats :1 
+Groupe P1.2 a pour etats :2 
 
-Nombre de symboles dans l'alphabet de l'automate : 2
+- - - - - Fin Partition 1:
+ ------------------
+ - - - - - Debut Partition 2: Séparation des états en fonctions de leur types de transitions (T ou NT)
+Groupe P2.0 a pour etats :0 3 4 
+Groupe P2.1 a pour etats :1 
+Groupe P2.2 a pour etats :2 
 
-Nombre d'etats : 3
-
-Numeros des etats : 0
-Numeros des etats : 1
-Numeros des etats : 2
-
-Nombre d'etats initiaux : 2
-
-Numeros des etats initiaux : 0
-Numeros des etats initiaux : 1
-
-Nombre d'etats terminaux : 2
-
-Numeros des etats terminaux : 0
-Numeros des etats terminaux : 2
-
-Nombre de transitions : 6
-
-Transition : 0b1
-Transition : 0b2
-Transition : 1a0
-Transition : 1a2
-Transition : 1b2
-Transition : 2a0
+- - - - - Fin Partition 2:
+ ------------------
+ - - - - - Debut Partition 3: Séparation des états en fonctions de leur types de transitions (T ou NT)

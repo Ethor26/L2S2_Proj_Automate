@@ -7,6 +7,8 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include <unistd.h>        // getcwd
+#include <errno.h>
 
 // **************************************************************
 // FONCTIONS OUTILS utilisées dans le reste du programme saisie sécurisée (empêche le problème de saisie de caractère.
@@ -80,11 +82,21 @@ char* int_to_str(int entier){
 }
 
 // Pour nbr : char str[] = { AF->numeros_etats_initiaux[i] + '0', '\0'}; // Conversion du int->char et du car->str
-
-#include <unistd.h>        // getcwd
-#include <errno.h>
-
 // #define BUFFER_SIZE 30
+
+// --------------------------------------------------------------
+// Comparaison Str : pas que la longueur
+int Str_comp(char* str1, char * str2){
+    if(strcmp(str1,str2) == 0){
+        for(int i = 0; i<strlen(str1); i++){
+            if (str1[i] != str2[i])
+                return 0;
+        }
+        return 1;
+    }
+    else
+        return 0;
+}
 
 // --------------------------------------------------------------
 // Retourne le Path du répertoire courant : équivalent de os.getcwd

@@ -52,7 +52,7 @@ int main(void) {
             fclose(File_1);
             char* Current_Path = Return_Current_Path();
             strcat(Current_Path, "\\Projet Automates finis et Expressions rationnelles");
-            Automate * AF = lire_automate_sur_fichier(strcat(Current_Path, "\\BN6-40.txt")); //Projet Automates finis et Expressions rationnelles/
+            Automate * AF = lire_automate_sur_fichier(strcat(Current_Path, "\\BN6-35.txt")); //Projet Automates finis et Expressions rationnelles/
 
             afficher_automate(AF, "BN6-trace40.txt", 40);
             printf("passe lire\n");
@@ -64,8 +64,8 @@ int main(void) {
             char* Current_Path = Return_Current_Path();
             char* Path_Lecture = Return_Current_Path();
             strcat(Path_Lecture, "\\Projet Automates finis et Expressions rationnelles");
-            Automate * AF = lire_automate_sur_fichier(strcat(Path_Lecture, "\\BN6-40.txt"));
-            Minim_princ(AF, strcat(Current_Path, "\\BN6-TraceTest"), 40);
+            Automate * AF = lire_automate_sur_fichier(strcat(Path_Lecture, "\\BN6-30.txt"));
+            Minim_princ(AF, strcat(Current_Path, "\\BN6-TraceTest"), 30);
             break;
         }
 
