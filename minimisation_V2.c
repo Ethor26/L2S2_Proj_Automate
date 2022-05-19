@@ -60,6 +60,18 @@ list_AF* Init_List_Gr(){
     return Liste_GR;
 }
 
+list_AF* Init_List_Et(){
+    list_AF* List_Et = malloc(sizeof(list_AF));
+    for(int i = 0; i<BUFSIZ;i++){
+        List_Et->list_EtAF[i] = malloc(sizeof(Etat_AF_minim *));
+    }
+
+    //for (int i = 0; i<100; i++)
+    //   Liste_GR->list_Gr[i] = malloc(sizeof(gr_minim));
+    List_Et->len_list_EtAF = 0;
+    return List_Et;
+}
+
 // *****************************************************
 // OUTILS MINIM
 
@@ -137,49 +149,62 @@ gr_minim* Verif_motifs(Etat_AF_minim * Etat_etudie, gr_minim* Groupe, list_AF* L
 
 // -------------------------------------
 // Convertie une liste de Etat_AF_minim** en Etat_AF**
-Etat_AF** Minim_to_af(Etat_AF_minim ** list_Etat_minim){
+Etat_AF** Minim_to_af(Etat_AF_minim ** list_Etat_minim, int len_list_Eminim){
     printf("Debut @Minim_to_af\n");
-    Etat_AF ** etat_AF = malloc(2*sizeof(Etat_AF*));
-    return etat_AF;
+    Etat_AF ** List_etat_AF = malloc(20*sizeof(Etat_AF*));
+    for(int i = 0; i<len_list_Eminim; i++)
+        List_etat_AF[i] = list_Etat_minim[i]->Etat_AF;
+    return List_etat_AF;
 }
 
 // -------------------------------------
 // Fusionne des etats : additionne leur transition et noms
-Etat_AF_minim** fusion_etats(Etat_AF** liste_etats_af){
+Etat_AF_minim* fusion_etats(gr_minim* Groupe){
     printf("Debut @fusion_etats\n");
-    Etat_AF_minim ** etat_AF = malloc(2*sizeof(Etat_AF_minim*));
-    return etat_AF;
+
+    Etat_AF_minim * Et_AFmin = Groupe->etats_Gr[0];
+
+    // Concaténation avec les autres états
+    for(int j = 1; j<=Groupe->nb_etats_Gr; j++){
+        strcat(Et_AFmin->Etat_AF->num_etat_depart, Groupe->etats_Gr[j]->Etat_AF->num_etat_depart);
+        for(int num_ar = 1; num_ar <= Et_AFmin->Etat_AF->nb_etats_arrivee; num_ar++)
+            strcat(Et_AFmin->Etat_AF->etats_arrivee[num_ar],Groupe->etats_Gr[j]->Etat_AF->etats_arrivee[num_ar]);
+    }
+
+    return Et_AFmin;
 }
 
 // -------------------------------------
 // Elimine les états en double après les partitions
-Etat_AF_minim** Elimination_doublons(list_AF* List_Gr){
+list_AF* Elimination_doublons(list_AF* List_Gr){
     // On parcours tous les groupes
-    Etat_AF_minim* * List_Et_AFMIN = malloc(BUFSIZ*sizeof(Etat_AF_minim*));
+    list_AF* List_Et_AFMIN = Init_List_Et();
+
     int Len_Etat_AF_minim = 0;
-    Etat_AF_minim** liste_etats_AFMin;
+    Etat_AF_minim* etat_AFMin;
 
     for (int id_Gr = 0; id_Gr<List_Gr->len_list_gr_minim ; id_Gr++){
         gr_minim* Groupe = List_Gr->list_Gr[id_Gr];
 
         if(Groupe->nb_etats_Gr > 1){
             // A ce niveau, tous groupes sont des singletons sauf ceux avec des doublons.
-            Etat_AF** liste_etats_af = Minim_to_af(Groupe->etats_Gr);
-            liste_etats_AFMin = fusion_etats(liste_etats_af); // Fonction commune avec la détermisation
+            // Etat_AF** liste_etats_af = Minim_to_af(Groupe->etats_Gr, Groupe->nb_etats_Gr);
+            etat_AFMin = fusion_etats(Groupe); // Fonction commune avec la détermisation
         }
+        else
+            etat_AFMin = Groupe->etats_Gr[0];
 
-        foreach(Etat_AF_minim** etat, liste_etats_AFMin){
-                // Attribution des etats minimaux à la liste finale : par pointeurs et foreach
-                List_Et_AFMIN[Len_Etat_AF_minim] = *etat;
-                Len_Etat_AF_minim++;
-        }
+        // Attribution des etats minimaux à la liste finale : par pointeurs
+        List_Et_AFMIN->list_EtAF[Len_Etat_AF_minim] = etat_AFMin;
+        List_Et_AFMIN->len_list_EtAF++;
+
     }
     return List_Et_AFMIN;
 }
 
 // -------------------------------------
 // Assemble les etats minimisés dans l'automate
-void Etat_AF_in_AF(Automate* AF, Etat_AF_minim** Etat_to_AF){
+void Etat_AF_in_AF(Automate* AF, list_AF* Etat_to_AF){
     printf("Debut @Etat_AF_in_AF");
 }
 
@@ -236,17 +261,21 @@ void Minim_princ(Automate* AF, char* nom_Fichier_trace, int numero){
     Liste_Gr->list_Gr[Liste_Gr->len_list_gr_minim] = Gr2;
     Liste_Gr->len_list_gr_minim++;
 
-    Aff_Pres_part(num_part, Fichier_trace);
-
     int Creation_gr = 1;
     do{
+        Aff_Pres_part(num_part, Fichier_trace);
         num_part++;
         Liste_Gr = Partition(Liste_Gr, num_part, &Creation_gr); // le liste_gr à gauche est l'"ancien". AF au cas ou
         Aff_res_part(Liste_Gr, Fichier_trace);
-        Aff_Pres_part(num_part, Fichier_trace);
     } while (Creation_gr == 1); // Partition exécutée tant que groupe crée
+    fprintf(Fichier_trace, "\n- - - - - Fin des Partitions:\n");
+    printf("\n- - - - - Fin des Partitions:\n");
 
-    Etat_AF_minim ** List_etat_AFminim = Elimination_doublons(Liste_Gr);
+    list_AF * List_etat_AFminim = Elimination_doublons(Liste_Gr);
+    for (int id_Et = 0; id_Et<List_etat_AFminim->len_list_EtAF ; id_Et++){
+        printf("%s", List_etat_AFminim->list_EtAF[id_Et]->Etat_AF->num_etat_depart);
+    }
+
     Etat_AF_in_AF(AF, List_etat_AFminim); // Attribution des etats_af de l'automate minimisé dans AF
 }
 
@@ -287,8 +316,6 @@ list_AF * Partition(list_AF* List_Gr, int num_part, int * Creation_gr){
         }
     }
 
-
-
     // 2e etape : répartition dans un groupe des états de départ en fonction des groupes des etats d'arrivées
     list_AF* List_new_gr = Init_List_Gr(); // stocke la liste des nouveaux groupes
     int id_new_gr = 0;
@@ -319,7 +346,7 @@ list_AF * Partition(list_AF* List_Gr, int num_part, int * Creation_gr){
                     if (Groupe->nb_etats_Gr > 1)
                         *Creation_gr = 1;
                 }
-                else if (new_Gr_corr != NULL){
+                else{
                     // Ajout d'Etat_etudié dans new_Gr_corr->etats_Gr
                     new_Gr_corr->etats_Gr[new_Gr_corr->nb_etats_Gr] = Etat_etudie;
                     new_Gr_corr->nb_etats_Gr++;

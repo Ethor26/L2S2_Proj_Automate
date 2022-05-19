@@ -31,6 +31,8 @@ typedef struct groupe_minimisation{
 typedef struct Liste_element_AF{
     gr_minim* list_Gr[BUFSIZ];
     int len_list_gr_minim;
+    Etat_AF_minim * list_EtAF[BUFSIZ];
+    int len_list_EtAF;
 }list_AF;
 
 // *******************************************************
@@ -38,7 +40,7 @@ typedef struct Liste_element_AF{
 
 // --------------------------------------------------
 // FONCTION Principale de miminisation
-_Noreturn void Minim_princ(Automate* AF, char* nom_Fichier_trace, int numero);
+void Minim_princ(Automate* AF, char* nom_Fichier_trace, int numero);
 
 // --------------------------------------------------
 // FONCTION Réalisant une partition à partir d'une liste de groupes d'états
